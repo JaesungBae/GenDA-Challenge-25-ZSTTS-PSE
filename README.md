@@ -37,15 +37,15 @@ Summarization of provided and required to submit data is depected below. Detaile
     <img src="figs/tts_v1_white.png" alt="Task1 Figure" width="500">
 </div>
 
-### Data
+### 1.1. Data
 We provide a single enrollement utterance for each speaker that is going to be used to generate personalized speech with zero-shot TTS system. We selected 10 speaker randomly from LibriTTS dataset, and additionally generated 10 virtual speakers with NN systems. Each enrollment speech can be found under ```data/{speaker_name}/reference_wav``` directory.
 
-### Submission
+### 1.2. Submission
 - 1000 (50 x 20 spkr) generated speech samples for each speaker to evaluate the performance of zero-shot TTS system.
 
 #### Submission Data format
 
-### (Optional) Run Baseline Implementation
+### 1.3. (Optional) Run Baseline Implementation
 We provide example implementation that generate personalized speech data with [SpeechT5-based zero-shot TTS system](https://huggingface.co/microsoft/speecht5_tts).
 ```bash
 python synthesize_utterances.py 
@@ -61,11 +61,11 @@ python synthesize_utterances.py
     <img src="figs/pse_v1_white.png" alt="Task1 Figure" width="500">
 </div>
 
-### Data
-#### Speech data for PSE model training
+### 2.1. Data
+#### 2.1.1. Speech data for PSE model training
 To train the PSE model, the speech samples generated in task1 are going to be used.
 
-#### Noise data for PSE model training 
+#### 2.1.2. Noise data for PSE model training 
 For nosie dataset, we assume that the **noise types are also personalized**; i.e., each user is assumed to be only exposed to a few types of noises. In here, we designate 5 noise samples to each speaker. The information of designated noise can be found in ```data/spk_noise_set.json```. We used *sound-bible* subset of [MUSAN](https://www.openslr.org/17/) noise dataset. You can download MUSAN dataset as follows.
 ```bash
 cd data
@@ -73,15 +73,15 @@ wget https://www.openslr.org/resources/17/musan.tar.gz
 tar -xvzf musan.tar.gz && rm musan.tar.gz
 ```
 
-#### Mixed speech data for PSE model evaluation
+#### 2.1.3. Mixed speech data for PSE model evaluation
 To evaluate the PSE model performance, we provide mixed speech samples for each speaker. For each speaker, we used 9 utterances for testest. Then, they are mixed with 5 different noise types with randomly selected SNR from range of {-2.5, 0, 2.5}. Therefore, the total number of mixed speech samples is 900 (45 x 20 spkrs). Mixed speech samples can be found in ```data/{speaker}/mixed_wavs``` directory. 
 
 
-### Submission
+### 2.2. Submission
 - 900 (45 x 20 spkr) enhanced speech samples from PSE model which is trained on augmented personalized speech dataset. 
 #### Submission Data format
 
-### (Optional) Run Baseline Implementation
+### 2.3. (Optional) Run Baseline Implementation
 We provide baseline PSE implementation based on ConvTasNet architecture [1, 2]. We also provide the generalist (pre-trained) checkpoints with three different sizes (tiny, small, and medium).
 
 First, create csv file that contained file information for training. In here, we only dealt with ```F0``` speaker for testing purpose.
