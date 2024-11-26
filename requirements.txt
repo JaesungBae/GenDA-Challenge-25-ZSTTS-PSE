@@ -1,0 +1,16 @@
+asteroid==0.7.0
+datasets==3.0.1
+jiwer==3.0.5
+librosa==0.10.0
+numpy==1.22.0
+pandas==1.5.3
+pesq==0.0.4
+pystoi==0.4.1
+Resemblyzer==0.1.4
+soundfile==0.12.1
+speechbrain==1.0.1
+torch==2.4.1
+torchaudio==2.4.1
+tqdm==4.66.5
+transformers==4.45.1
+wandb==0.18.7

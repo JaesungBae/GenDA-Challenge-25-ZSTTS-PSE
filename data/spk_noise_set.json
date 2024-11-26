@@ -1,0 +1,142 @@
+{
+    "M1": [
+        "noise-sound-bible-0006.wav",
+        "noise-sound-bible-0034.wav",
+        "noise-sound-bible-0011.wav",
+        "noise-sound-bible-0052.wav",
+        "noise-sound-bible-0034.wav"
+    ],
+    "F0": [
+        "noise-sound-bible-0013.wav",
+        "noise-sound-bible-0004.wav",
+        "noise-sound-bible-0048.wav",
+        "noise-sound-bible-0068.wav",
+        "noise-sound-bible-0071.wav"
+    ],
+    "M0": [
+        "noise-sound-bible-0042.wav",
+        "noise-sound-bible-0043.wav",
+        "noise-sound-bible-0006.wav",
+        "noise-sound-bible-0020.wav",
+        "noise-sound-bible-0017.wav"
+    ],
+    "F1": [
+        "noise-sound-bible-0043.wav",
+        "noise-sound-bible-0071.wav",
+        "noise-sound-bible-0042.wav",
+        "noise-sound-bible-0031.wav",
+        "noise-sound-bible-0020.wav"
+    ],
+    "F2": [
+        "noise-sound-bible-0000.wav",
+        "noise-sound-bible-0055.wav",
+        "noise-sound-bible-0011.wav",
+        "noise-sound-bible-0076.wav",
+        "noise-sound-bible-0048.wav"
+    ],
+    "F3": [
+        "noise-sound-bible-0008.wav",
+        "noise-sound-bible-0000.wav",
+        "noise-sound-bible-0040.wav",
+        "noise-sound-bible-0057.wav",
+        "noise-sound-bible-0013.wav"
+    ],
+    "M2": [
+        "noise-sound-bible-0005.wav",
+        "noise-sound-bible-0011.wav",
+        "noise-sound-bible-0085.wav",
+        "noise-sound-bible-0018.wav",
+        "noise-sound-bible-0016.wav"
+    ],
+    "M3": [
+        "noise-sound-bible-0002.wav",
+        "noise-sound-bible-0037.wav",
+        "noise-sound-bible-0055.wav",
+        "noise-sound-bible-0073.wav",
+        "noise-sound-bible-0061.wav"
+    ],
+    "M4": [
+        "noise-sound-bible-0033.wav",
+        "noise-sound-bible-0060.wav",
+        "noise-sound-bible-0004.wav",
+        "noise-sound-bible-0039.wav",
+        "noise-sound-bible-0043.wav"
+    ],
+    "F4": [
+        "noise-sound-bible-0066.wav",
+        "noise-sound-bible-0061.wav",
+        "noise-sound-bible-0026.wav",
+        "noise-sound-bible-0077.wav",
+        "noise-sound-bible-0081.wav"
+    ],
+    "VirtualF0": [
+        "noise-sound-bible-0067.wav",
+        "noise-sound-bible-0072.wav",
+        "noise-sound-bible-0040.wav",
+        "noise-sound-bible-0001.wav",
+        "noise-sound-bible-0050.wav"
+    ],
+    "VirtualF1": [
+        "noise-sound-bible-0082.wav",
+        "noise-sound-bible-0065.wav",
+        "noise-sound-bible-0055.wav",
+        "noise-sound-bible-0068.wav",
+        "noise-sound-bible-0081.wav"
+    ],
+    "VirtualF2": [
+        "noise-sound-bible-0085.wav",
+        "noise-sound-bible-0076.wav",
+        "noise-sound-bible-0062.wav",
+        "noise-sound-bible-0066.wav",
+        "noise-sound-bible-0085.wav"
+    ],
+    "VirtualF3": [
+        "noise-sound-bible-0053.wav",
+        "noise-sound-bible-0047.wav",
+        "noise-sound-bible-0065.wav",
+        "noise-sound-bible-0004.wav",
+        "noise-sound-bible-0082.wav"
+    ],
+    "VirtualF4": [
+        "noise-sound-bible-0023.wav",
+        "noise-sound-bible-0010.wav",
+        "noise-sound-bible-0062.wav",
+        "noise-sound-bible-0084.wav",
+        "noise-sound-bible-0033.wav"
+    ],
+    "VirtualM0": [
+        "noise-sound-bible-0009.wav",
+        "noise-sound-bible-0058.wav",
+        "noise-sound-bible-0049.wav",
+        "noise-sound-bible-0073.wav",
+        "noise-sound-bible-0043.wav"
+    ],
+    "VirtualM1": [
+        "noise-sound-bible-0002.wav",
+        "noise-sound-bible-0024.wav",
+        "noise-sound-bible-0075.wav",
+        "noise-sound-bible-0011.wav",
+        "noise-sound-bible-0080.wav"
+    ],
+    "VirtualM2": [
+        "noise-sound-bible-0046.wav",
+        "noise-sound-bible-0001.wav",
+        "noise-sound-bible-0045.wav",
+        "noise-sound-bible-0029.wav",
+        "noise-sound-bible-0051.wav"
+    ],
+    "VirtualM3": [
+        "noise-sound-bible-0068.wav",
+        "noise-sound-bible-0064.wav",
+        "noise-sound-bible-0007.wav",
+        "noise-sound-bible-0081.wav",
+        "noise-sound-bible-0036.wav"
+    ],
+    "VirtualM4": [
+        "noise-sound-bible-0063.wav",
+        "noise-sound-bible-0080.wav",
+        "noise-sound-bible-0029.wav",
+        "noise-sound-bible-0069.wav",
+        "noise-sound-bible-0061.wav"
+    ]
+}
