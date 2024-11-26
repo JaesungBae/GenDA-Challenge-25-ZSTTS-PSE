@@ -70,7 +70,7 @@ tar -xvzf musan.tar.gz && rm musan.tar.gz
 ```
 
 #### Mixed speech data for PSE model evaluation
-To evaluate the PSE model performance, we provide mixed speech samples for each speaker. For each speaker, we used 9 utterances for testest. Then, they are mixed with 5 different noise types with randomly selected SNR. SNR range was {-2.5, 0, 2.5}. Mixed speech samples can be found in ```data/{speaker}/mixed_wavs``` directory. 
+To evaluate the PSE model performance, we provide mixed speech samples for each speaker. For each speaker, we used 9 utterances for testest. Then, they are mixed with 5 different noise types with randomly selected SNR from range of {-2.5, 0, 2.5}. Therefore, the total number of mixed speech samples is 900 (45 x 20 spkrs). Mixed speech samples can be found in ```data/{speaker}/mixed_wavs``` directory. 
 
 
 ### Submission
