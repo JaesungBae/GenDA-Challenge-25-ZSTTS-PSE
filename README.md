@@ -12,9 +12,9 @@ performance.
 We also provide baseline experiments using open-source zero-shot TTS models and ConvTasNet-based PSE model to encourage participation and 
 benchmark advancements.
 
-Workshop web page: [Generative Data Augmentation for Real-World Signal Processing Applications (GenDA 2025)](https://sites.google.com/view/genda2025)
+- Workshop web page: [Generative Data Augmentation for Real-World Signal Processing Applications (GenDA 2025)](https://sites.google.com/view/genda2025)
 
-Challenge web page: [Zero-Shot TTS and PSE Challenge](https://sites.google.com/view/genda2025/pse)
+- Challenge web page: [Zero-Shot TTS and PSE Challenge](https://sites.google.com/view/genda2025/pse)
 
 
 
