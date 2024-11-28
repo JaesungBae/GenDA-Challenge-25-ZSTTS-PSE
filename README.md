@@ -37,14 +37,42 @@ Summarization of provided and required to submit data is depected below. Detaile
     <img src="figs/tts_v1_white.png" alt="Task1 Figure" width="500">
 </div>
 
+In Task 1, we aim to build zero-shot TTS systems, which can generate speech samples that contain target speaker characteristics from a single enrollment utterance, to augment the personalized speech data. To evaluate the Zero-shot TTS performance, we asked participants to generate speech samples with given sentences. As can be found in ```data/synth_sentences.txt```, 50 sentences are asked to generate for each reference wav.
+
+We provide additional sentences (```data/synth_sentences_additional.txt```) that are randomly selected from LJSpeech dataset. However, we do not constrain the number of sentences that participants can generate and use to train the PSE model (Task 2).
+
 ### 1.1. Data
 We provide a single enrollement utterance for each speaker that is going to be used to generate personalized speech with zero-shot TTS system. We selected 10 speaker randomly from LibriTTS dataset, and additionally generated 10 virtual speakers with NN systems. Each enrollment speech can be found under ```data/{speaker_name}/reference_wav``` directory.
 
 ### 1.2. Submission
-- 1000 (50 x 20 spkr) generated speech samples for each speaker to evaluate the performance of zero-shot TTS system.
+- 1000 (50 x 20 spkr) generated speech samples for each speaker with sentences in ```data/synth_sentences.txt``` to evaluate the performance of zero-shot TTS system.
 
 #### Submission Data format
+The submission format should be as follows. ```{Team name}/{speaker name}/task1/{speaker name}_task1_{000 ~ 049}.wav```.
 
+
+```
+{Team name}
+├── F0
+│   └── task1
+│         ├── F0_task1_00.wav
+│         ├── F0_task1_01.wav
+│         ├── F0_task1_02.wav
+...
+│         └── F0_task1_49.wav
+...
+└── VirtualM4
+    └── task1
+          ├── VirtualM4_task1_00.wav
+          ├── VirtualM4_task1_01.wav
+          ├── VirtualM4_task1_02.wav
+...
+          └── VirtualM4_task1_49.wav
+```
+Please add a leading zero to the single-digit numbers with following codes so that we can use easily compute the results.
+```python
+f'{speaker_name}_task1_{i:02d}.wav'
+```
 ### 1.3. (Optional) Run Baseline Implementation
 We provide example implementation that generate personalized speech data with [SpeechT5-based zero-shot TTS system](https://huggingface.co/microsoft/speecht5_tts).
 ```bash
@@ -60,6 +88,11 @@ python synthesize_utterances.py
 <div align="center">
     <img src="figs/pse_v1_white.png" alt="Task1 Figure" width="500">
 </div>
+
+In Task 2, we aim to build PSE models for each speaker trained with augmented personalized data generated in Task 1. Then, we will evaluate the performance of the PSE model to measure the effectiveness of the augmented personalized dataset. 
+
+<!-- As described in Task 1, we do not contrain the number of generated speech samples that can be used during PSE model training. -->
+In here, participatns are asked to submit enhanced speech samples that are enhanced from provided nosiy test samples from each speaker with PSE model. These speech samples will be used to evaluate the PSE model performance. 
 
 ### 2.1. Data
 #### 2.1.1. Speech data for PSE model training
@@ -80,6 +113,24 @@ To evaluate the PSE model performance, we provide mixed speech samples for each 
 ### 2.2. Submission
 - 900 (45 x 20 spkr) enhanced speech samples from PSE model which is trained on augmented personalized speech dataset. 
 #### Submission Data format
+The submission format should be as follows. ```{Team name}/{speaker name}/task2/{speaker name}_task2_{000 ~ 044}.wav```.
+As in task1, please add a leading zero to the single-digit numbers so that we can compute the results easily.
+```
+{Team name}
+├── F0
+│   └── task2
+│         ├── F0_task2_00.wav
+│         ├── F0_task2_01.wav
+...
+│         └── F0_task2_44.wav
+...
+└── VirtualM4
+    └── task2
+          ├── VirtualM4_task2_00.wav
+          ├── VirtualM4_task2_01.wav
+...
+          └── VirtualM4_task2_44.wav
+```
 
 ### 2.3. (Optional) Run Baseline Implementation
 We provide baseline PSE implementation based on ConvTasNet architecture [1, 2]. We also provide the generalist (pre-trained) checkpoints with three different sizes (tiny, small, and medium).
