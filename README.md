@@ -58,7 +58,7 @@ The submission format should be as follows. ```{Team name}/{speaker name}/task1/
 │         ├── F0_task1_00.wav
 │         ├── F0_task1_01.wav
 │         ├── F0_task1_02.wav
-...
+│         ...
 │         └── F0_task1_49.wav
 ...
 └── VirtualM4
@@ -66,7 +66,7 @@ The submission format should be as follows. ```{Team name}/{speaker name}/task1/
           ├── VirtualM4_task1_00.wav
           ├── VirtualM4_task1_01.wav
           ├── VirtualM4_task1_02.wav
-...
+          ...
           └── VirtualM4_task1_49.wav
 ```
 Please add a leading zero to the single-digit numbers with following codes so that we can use easily compute the results.
@@ -121,14 +121,14 @@ As in task1, please add a leading zero to the single-digit numbers so that we ca
 │   └── task2
 │         ├── F0_task2_00.wav
 │         ├── F0_task2_01.wav
-...
+│         ...
 │         └── F0_task2_44.wav
 ...
 └── VirtualM4
     └── task2
           ├── VirtualM4_task2_00.wav
           ├── VirtualM4_task2_01.wav
-...
+          ...
           └── VirtualM4_task2_44.wav
 ```
 
