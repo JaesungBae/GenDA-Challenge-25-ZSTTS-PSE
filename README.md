@@ -52,22 +52,20 @@ The submission format should be as follows. ```{Team name}/{speaker name}/task1/
 
 
 ```
-{Team name}
+{Team name}_task1.zip
 ├── F0
-│   └── task1
-│         ├── F0_task1_00.wav
-│         ├── F0_task1_01.wav
-│         ├── F0_task1_02.wav
-│         ...
-│         └── F0_task1_49.wav
+│   ├── F0_task1_00.wav
+│   ├── F0_task1_01.wav
+│   ├── F0_task1_02.wav
+│   ...
+│   └── F0_task1_49.wav
 ...
 └── VirtualM4
-    └── task1
-          ├── VirtualM4_task1_00.wav
-          ├── VirtualM4_task1_01.wav
-          ├── VirtualM4_task1_02.wav
-          ...
-          └── VirtualM4_task1_49.wav
+    ├── VirtualM4_task1_00.wav
+    ├── VirtualM4_task1_01.wav
+    ├── VirtualM4_task1_02.wav
+    ...
+    └── VirtualM4_task1_49.wav
 ```
 Please add a leading zero to the single-digit numbers with following codes so that we can use easily compute the results.
 ```python
@@ -116,20 +114,18 @@ To evaluate the PSE model performance, we provide mixed speech samples for each 
 The submission format should be as follows. ```{Team name}/{speaker name}/task2/{speaker name}_task2_{000 ~ 044}.wav```.
 As in task1, please add a leading zero to the single-digit numbers so that we can compute the results easily.
 ```
-{Team name}
+{Team name}_task2.zip
 ├── F0
-│   └── task2
-│         ├── F0_task2_00.wav
-│         ├── F0_task2_01.wav
-│         ...
-│         └── F0_task2_44.wav
+│   ├── F0_task2_00.wav
+│   ├── F0_task2_01.wav
+│   ...
+│   └── F0_task2_44.wav
 ...
 └── VirtualM4
-    └── task2
-          ├── VirtualM4_task2_00.wav
-          ├── VirtualM4_task2_01.wav
-          ...
-          └── VirtualM4_task2_44.wav
+    ├── VirtualM4_task2_00.wav
+    ├── VirtualM4_task2_01.wav
+    ...
+    └── VirtualM4_task2_44.wav
 ```
 
 ### 2.3. (Optional) Run Baseline Implementation
