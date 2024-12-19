@@ -56,14 +56,12 @@ The submission format should be as follows. ```{Team name}/{speaker name}/task1/
 ├── F0
 │   ├── F0_task1_00.wav
 │   ├── F0_task1_01.wav
-│   ├── F0_task1_02.wav
 │   ...
 │   └── F0_task1_49.wav
 ...
 └── VirtualM4
     ├── VirtualM4_task1_00.wav
     ├── VirtualM4_task1_01.wav
-    ├── VirtualM4_task1_02.wav
     ...
     └── VirtualM4_task1_49.wav
 ```
