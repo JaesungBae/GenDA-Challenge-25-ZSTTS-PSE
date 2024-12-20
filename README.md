@@ -14,7 +14,7 @@ Participation is open to all. Participants are asked to participate in both trac
 # Track details and Rules
 ## Track 1. Augmenting Personalized Data With Zero-shot TTS System
 
-<div align="center">
+<div style="width=500px", align="center">
 <figure>
     <img src="figs/tts_v1_white.png" alt="Task1 Fgirue" width="500">
     <br>
@@ -47,7 +47,7 @@ The zero-shot TTS system’s performance is evaluated across three aspects: spea
 
 ## Track 2. Training PSE Model With Augmented Personalized Data
 
-<div align="center">
+<div style="width=500px", align="center">
 <figure style="margin: autio; text-align:center;">
     <img src="figs/pse_v1_white.png" alt="Task1 Fgirue" width="500">
     <br>
