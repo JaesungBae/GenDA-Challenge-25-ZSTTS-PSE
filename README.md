@@ -49,7 +49,7 @@ The zero-shot TTS system’s performance is evaluated across three aspects: spea
 
 <div 
 style="text-align: center; width: 500px; margin: auto;">
-    <img src="figs/pse_v1_white.png" alt="Task1 Fgirue" style="width: 100%;">
+    <img src="figs/pse_v1_white.png" alt="Task1 Fgirue" style="width: 500px;">
     <br>
     <p style="margin: 0; font-style: italic;">Fig 2. Illustration of track 2. “Negative SDR Loss” is just one example of loss type, and participants can use any kind of loss to train the PSE model.</p>
 <br>
