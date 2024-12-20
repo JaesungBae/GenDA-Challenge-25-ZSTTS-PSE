@@ -13,10 +13,13 @@ Participation is open to all. Participants are asked to participate in both trac
 
 # Track details and Rules
 ## Track 1. Augmenting Personalized Data With Zero-shot TTS System
+
 <div align="center">
 <figure>
     <img src="figs/tts_v1_white.png" alt="Task1 Fgirue" width="500">
+    <br>
     <figcaption>Fig 1. Illustration of track 1.</figcaption>
+    <br>
 </figure>
 </div>
 
