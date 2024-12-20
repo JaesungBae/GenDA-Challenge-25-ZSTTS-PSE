@@ -86,6 +86,49 @@ We also build baseline systems for each task and release it as an open-source. Y
 - For track 1, we use three open-source zero-shot TTS models as the baseline models: YourTTS [3], SpeechT5-based zero-shot TTS model [4], and XTTS [5]. 
 - For track 2, we adopt the ConvTasNet [6]-based architecture for our PSE models based on the original PSE model architecture proposed in [7, 8]. 
 
+# How to Run Baseline Experiment Code
+## Track 1. Augmenting Personalized Data With Zero-shot TTS System
+We provide example implementation that generate personalized speech data with [SpeechT5-based zero-shot TTS system](https://huggingface.co/microsoft/speecht5_tts).
+```bash
+pip install -r requirements.txt
+```
+```bash
+python synthesize_utterances.py 
+  --data_dir data
+  --text_file data/synth_sentences.txt
+  --output_dir {your synthesized data save dir}
+```
+
+## Track 2. Training PSE Model With Augmented Personalized Data
+We provide baseline PSE implementation based on ConvTasNet architecture. We also provide the generalist (pre-trained) checkpoints with three different sizes (tiny, small, and medium), which can be found in ```checkpoints/generalists``` folder.
+
+### Download noise dataset (MUSAN)
+We used *sound-bible* subset of [MUSAN](https://www.openslr.org/17/) noise dataset. You can download MUSAN dataset as follows.
+```bash
+cd data
+wget https://www.openslr.org/resources/17/musan.tar.gz
+tar -xvzf musan.tar.gz && rm musan.tar.gz
+```
+
+### Fine-tune Generalist PSE Model
+First, create csv file that contained file information for training. In here, we only dealt with ```F0``` speaker for testing purpose.
+```bash
+python create_csv_files_for_training.py 
+  --wav_dir {your wav dir} 
+  --csv_save_dir {your csv save dir}
+```
+The resulted csv file format is follows. Also, you can find an example csv file in ```examples/csv_files/speecht5_synth_50utt.csv```.
+```csv
+# csv file structure
+{speaker name},{train/val/test},{each wav data path}\n
+```
+
+Then, change the path settings in argparser of ```train.py``` file. After that, adjust the arguments in ```examples/run_speecht5.sh``` file and train the PSE model.
+```bash
+bash examples/run_speecht5.sh
+```
+
+
 # Submission instructions
 We use ICASSP 2025’s submission system on CMT.
 - Login as an “Author” at [https://cmt3.research.microsoft.com/ICASSP2025/](https://cmt3.research.microsoft.com/ICASSP2025/)
@@ -138,48 +181,6 @@ Participants are asked to submit a minimum two-page (but not exceeding four page
 - The description of the “zero-shot” part of their algorithm
 - (Optional) Any results on the third-party evaluation data they used to validate the models
 - (Optional) Description of the new PSE architecture they propose, including the model complexity
-
-# How to Run Baseline Experiment Code
-## Track 1. Augmenting Personalized Data With Zero-shot TTS System
-We provide example implementation that generate personalized speech data with [SpeechT5-based zero-shot TTS system](https://huggingface.co/microsoft/speecht5_tts).
-```bash
-pip install -r requirements.txt
-```
-```bash
-python synthesize_utterances.py 
-  --data_dir data
-  --text_file data/synth_sentences.txt
-  --output_dir {your synthesized data save dir}
-```
-
-## Track 2. Training PSE Model With Augmented Personalized Data
-We provide baseline PSE implementation based on ConvTasNet architecture. We also provide the generalist (pre-trained) checkpoints with three different sizes (tiny, small, and medium), which can be found in ```checkpoints/generalists``` folder.
-
-### Download noise dataset (MUSAN)
-We used *sound-bible* subset of [MUSAN](https://www.openslr.org/17/) noise dataset. You can download MUSAN dataset as follows.
-```bash
-cd data
-wget https://www.openslr.org/resources/17/musan.tar.gz
-tar -xvzf musan.tar.gz && rm musan.tar.gz
-```
-
-### Fine-tune Generalist PSE Model
-First, create csv file that contained file information for training. In here, we only dealt with ```F0``` speaker for testing purpose.
-```bash
-python create_csv_files_for_training.py 
-  --wav_dir {your wav dir} 
-  --csv_save_dir {your csv save dir}
-```
-The resulted csv file format is follows. Also, you can find an example csv file in ```examples/csv_files/speecht5_synth_50utt.csv```.
-```csv
-# csv file structure
-{speaker name},{train/val/test},{each wav data path}\n
-```
-
-Then, change the path settings in argparser of ```train.py``` file. After that, adjust the arguments in ```examples/run_speecht5.sh``` file and train the PSE model.
-```bash
-bash examples/run_speecht5.sh
-```
 
 
 # References
