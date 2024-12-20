@@ -139,6 +139,47 @@ Participants are asked to submit a minimum two-page (but not exceeding four page
 - (Optional) Any results on the third-party evaluation data they used to validate the models
 - (Optional) Description of the new PSE architecture they propose, including the model complexity
 
+# How to Run This Code
+## Track 1. Augmenting Personalized Data With Zero-shot TTS System
+Run Baseline Implementation
+We provide example implementation that generate personalized speech data with [SpeechT5-based zero-shot TTS system](https://huggingface.co/microsoft/speecht5_tts).
+```bash
+python synthesize_utterances.py 
+  --data_dir data
+  --text_file data/synth_sentences.txt
+  --output_dir {your synthesized data save dir}
+```
+
+## Track 2. Training PSE Model With Augmented Personalized Data
+We provide baseline PSE implementation based on ConvTasNet architecture. We also provide the generalist (pre-trained) checkpoints with three different sizes (tiny, small, and medium), which can be found in ```checkpoints/generalists``` folder.
+
+### Download noise dataset (MUSAN)**
+We used *sound-bible* subset of [MUSAN](https://www.openslr.org/17/) noise dataset. You can download MUSAN dataset as follows.
+```bash
+cd data
+wget https://www.openslr.org/resources/17/musan.tar.gz
+tar -xvzf musan.tar.gz && rm musan.tar.gz
+```
+
+### Fine-tune Generalist PSE Model
+First, create csv file that contained file information for training. In here, we only dealt with ```F0``` speaker for testing purpose.
+```bash
+python create_csv_files_for_training.py 
+  --wav_dir {your wav dir} 
+  --csv_save_dir {your csv save dir}
+```
+The resulted csv file format is follows. Also, you can find an example csv file in ```examples/csv_files/speecht5_synth_50utt.csv```.
+```csv
+# csv file structure
+{speaker name},{train/val/test},{each wav data path}\n
+```
+
+Then, change the path settings in argparser of ```train.py``` file. After that, adjust the arguments in ```examples/run_speecht5.sh``` file and train the PSE model.
+```bash
+bash examples/run_speecht5.sh
+```
+
+
 # References
 - [1] M. Ravanelli, T. Parcollet, P. Plantinga, A. Rouhe, S. Cornell et al., “Speechbrain: A general-purpose speech toolkit,” CoRR, vol.abs/2106.04624, 2021. [Online]. Available: https://arxiv.org/abs/2106.04624
 - [2] A. Radford, J. W. Kim, T. Xu, G. Brockman, C. Mcleavey et al., “Robust speech recognition via large-scale weak supervision,” in Proc. Int. Conf. on Machine Learning (ICLR), 2023.
