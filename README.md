@@ -141,8 +141,10 @@ Participants are asked to submit a minimum two-page (but not exceeding four page
 
 # How to Run Baseline Experiment Code
 ## Track 1. Augmenting Personalized Data With Zero-shot TTS System
-Run Baseline Implementation
 We provide example implementation that generate personalized speech data with [SpeechT5-based zero-shot TTS system](https://huggingface.co/microsoft/speecht5_tts).
+```bash
+pip install -r requirements.txt
+```
 ```bash
 python synthesize_utterances.py 
   --data_dir data
