@@ -47,21 +47,13 @@ The zero-shot TTS system’s performance is evaluated across three aspects: spea
 
 ## Track 2. Training PSE Model With Augmented Personalized Data
 
-<center>
-    <img src="figs/pse_v1_white.png" alt="Task1 Fgirue" width="500">
-  <div style="width: 500px; text-align: center;">
-    <em>Fig 2. Illustration of track 2. “Negative SDR Loss” is just one example of loss type, and participants can use any kind of loss to train the PSE model.</em>
-  </div>
-</center>
-
-<div style="width=500px", align="center">
-<figure style="margin: autio; text-align:center;">
-    <img src="figs/pse_v1_white.png" alt="Task1 Fgirue" width="500">
+<div 
+style="text-align: center; width: 500px; margin: auto;">
+    <img src="figs/pse_v1_white.png" alt="Task1 Fgirue" style="width: 100%;">
     <br>
-    <p><em>Fig 2. Illustration of track 2. “Negative SDR Loss” is just one example of loss type, and participants can use any kind of loss to train the PSE model.</em></p>
+    <p style="margin: 0; font-style: italic;">Fig 2. Illustration of track 2. “Negative SDR Loss” is just one example of loss type, and participants can use any kind of loss to train the PSE model.</p>
 <br>
 <br>
-</figure>
 </div>
 
 
