@@ -20,6 +20,7 @@ Participation is open to all. Participants are asked to participate in both trac
     <br>
     <figcaption>Fig 1. Illustration of track 1.</figcaption>
     <br>
+    <br>
 </figure>
 </div>
 
@@ -49,7 +50,10 @@ The zero-shot TTS system’s performance is evaluated across three aspects: spea
 <div align="center">
 <figure>
     <img src="figs/pse_v1_white.png" alt="Task1 Fgirue" width="500">
+    <br>
     <figcaption>Fig 2. Illustration of track 2. “Negative SDR Loss” is just one example of loss type, and participants can use any kind of loss to train the PSE model.</figcaption>
+<br>
+<br>
 </figure>
 </div>
 
