@@ -47,15 +47,23 @@ The zero-shot TTS system’s performance is evaluated across three aspects: spea
 
 ## Track 2. Training PSE Model With Augmented Personalized Data
 
+<center>
+    <img src="figs/pse_v1_white.png" alt="Task1 Fgirue" width="500">
+  <div style="width: 500px; text-align: center;">
+    <em>Fig 2. Illustration of track 2. “Negative SDR Loss” is just one example of loss type, and participants can use any kind of loss to train the PSE model.</em>
+  </div>
+</center>
+
 <div style="width=500px", align="center">
 <figure style="margin: autio; text-align:center;">
     <img src="figs/pse_v1_white.png" alt="Task1 Fgirue" width="500">
     <br>
-    <figcaption><em>Fig 2. Illustration of track 2. “Negative SDR Loss” is just one example of loss type, and participants can use any kind of loss to train the PSE model.</em></figcaption>
+    <p><em>Fig 2. Illustration of track 2. “Negative SDR Loss” is just one example of loss type, and participants can use any kind of loss to train the PSE model.</em></p>
 <br>
 <br>
 </figure>
 </div>
+
 
 
 In Task 2, we ask participants to build PSE models for the 20 target speakers (i.e., one PSE model tailored to work on each speaker) trained with augmented personalized data generated in Task 1. Then, we will evaluate the performance of the PSE model to measure the effectiveness of the augmented personalized dataset.
