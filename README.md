@@ -139,7 +139,7 @@ Participants are asked to submit a minimum two-page (but not exceeding four page
 - (Optional) Any results on the third-party evaluation data they used to validate the models
 - (Optional) Description of the new PSE architecture they propose, including the model complexity
 
-# How to Run This Code
+# How to Run Baseline Experiment Code
 ## Track 1. Augmenting Personalized Data With Zero-shot TTS System
 Run Baseline Implementation
 We provide example implementation that generate personalized speech data with [SpeechT5-based zero-shot TTS system](https://huggingface.co/microsoft/speecht5_tts).
@@ -153,7 +153,7 @@ python synthesize_utterances.py
 ## Track 2. Training PSE Model With Augmented Personalized Data
 We provide baseline PSE implementation based on ConvTasNet architecture. We also provide the generalist (pre-trained) checkpoints with three different sizes (tiny, small, and medium), which can be found in ```checkpoints/generalists``` folder.
 
-### Download noise dataset (MUSAN)**
+### Download noise dataset (MUSAN)
 We used *sound-bible* subset of [MUSAN](https://www.openslr.org/17/) noise dataset. You can download MUSAN dataset as follows.
 ```bash
 cd data
