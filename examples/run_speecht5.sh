@@ -15,7 +15,10 @@ for spk in ${speakers[@]}; do
             -i $s \
             -p 'speecht5_synth_50utt' \
             --save_path results/test \
-            --train_data_csv_dir examples/csv_files
+            --train_data_csv_dir examples/csv_files \
+            --min_epoch 0 \
+            --max_epoch 1001 \
+            --batch_size 8
         done
     done
 done

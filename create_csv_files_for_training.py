@@ -22,6 +22,13 @@ def utt_50(spks, wav_dir, model, csv_save_dir, prefix=""):
             assert os.path.exists(path), path
             out.append([spk, "val", path])
 
+    # Test, noisy files.
+    for spk in spks:
+        for i in range(45):
+            path = f"data/{spk}/mixed_wavs/{spk}_mixed_{i:02d}.wav"
+            assert os.path.exists(path), path
+            out.append([spk, "test", path])
+
     with open(f"{csv_save_dir}/{model}_synth_50utt{prefix}.csv", "w") as f:
         writer = csv.writer(f)
         writer.writerows(out)
