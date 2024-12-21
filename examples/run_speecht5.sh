@@ -13,7 +13,9 @@ for spk in ${speakers[@]}; do
             -s $spk \
             -r $r \
             -i $s \
-            -p 'speecht5_synth_50utt' 
+            -p 'speecht5_synth_50utt' \
+            --save_path results/test \
+            --train_data_csv_dir examples/csv_files
         done
     done
 done

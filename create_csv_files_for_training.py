@@ -34,10 +34,11 @@ if __name__ == "__main__":
     parser.add_argument("--csv_save_dir", type=str, default="examples/csv_files")
     args = parser.parse_args()
 
-    # spks = sorted([x for x in os.listdir(args.data_dir) if os.path.isdir(f"{args.data_dir}/{x}")])
-    spks = ["F0"]  # For test we only used a single speaker
+    spks = sorted([x for x in os.listdir(args.data_dir) if os.path.isdir(f"{args.data_dir}/{x}")])
+    # spks = ["F0"]  # For test we only used a single speaker
     print("# Processing speaker: ", spks)
-    print("# WARNING: For test purpose, we only used a single speaker")
+    # print("# WARNING: For test purpose, we only used a single speaker")
     os.makedirs(args.csv_save_dir, exist_ok=True)
 
     utt_50(spks, wav_dir=args.wav_dir, model="speecht5", csv_save_dir=args.csv_save_dir, prefix="")
+    print("# Generate CSV files for training successfully!")
