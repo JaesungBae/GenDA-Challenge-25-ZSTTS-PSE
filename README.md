@@ -129,7 +129,7 @@ Then, change the path settings in argparser of ```train.py``` file. After that, 
 bash examples/run_speecht5.sh
 ```
 
-### Inference PSE model.
+### Inference PSE model
 Enhance the noisy speech using the same arguments applied to fine-tune the PSE model. Refer to the ```examples/run_speecht5.sh``` file for examples of these arguments.
 ```bash
 python inference.py
