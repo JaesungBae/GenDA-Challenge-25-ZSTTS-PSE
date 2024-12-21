@@ -129,6 +129,19 @@ Then, change the path settings in argparser of ```train.py``` file. After that, 
 bash examples/run_speecht5.sh
 ```
 
+### Inference PSE model.
+Enhance the noisy speech using the same arguments applied to fine-tune the PSE model. Refer to the ```examples/run_speecht5.sh``` file for examples of these arguments.
+```bash
+python inference.py
+    -s {speaker_name}
+    -r {learning_rate}
+    -i {model size, medium/small/tiny}
+    -p {partition_name}
+    --checkpoint_path {PSE checkpoint saved path}
+    --test_data_csv_dir {csv saved dir}
+    --save_path {enhanced speech save dir}
+```
+
 
 # Submission instructions
 We use ICASSP 2025’s submission system on CMT.
