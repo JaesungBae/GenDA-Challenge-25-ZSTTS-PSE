@@ -112,7 +112,7 @@ tar -xvzf musan.tar.gz && rm musan.tar.gz
 ```
 
 ### Fine-tune Generalist PSE Model
-First, create csv file that contained file information for training. In here, we only dealt with ```F0``` speaker for testing purpose.
+First, create csv file that contained file information for training. *In here, we only dealt with ```F0``` speaker for testing purpose.*
 ```bash
 python create_csv_files_for_training.py 
   --wav_dir {your wav dir} 
