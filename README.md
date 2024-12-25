@@ -31,7 +31,7 @@ In Task 1, we aim to evaluate zero-shot TTS systems based on the signals they ge
 - We provide a single enrollment speech for 10 real-world recording speakers and 10 virtual speakers’ speech signals.
 - Enrollment speech can be found in the “reference_wav” folder of each speaker [here](https://github.com/JaesungBae/GenDA-Challenge-25-ZSTTS-PSE/tree/main/data). (Enrollment speech has a sampling rate of 24 kHz.)
 - Participants are asked to build a zero-shot TTS system and augment the data with provided enrollment speech of 20 target speakers.
-- We provide **50 text sentences for each speaker (50 x 20 spkrs, total 1000)**, which are supposed to be used as scripts for the participating TTS system. **The corresponding speech signals are to be synthesized from the TTS system and submitted.**
+- We provide **[50 text sentences for each speaker](https://github.com/JaesungBae/GenDA-Challenge-25-ZSTTS-PSE/blob/main/data/synth_sentences.txt) (50 x 20 spkrs, total 1000)**, which are supposed to be used as scripts for the participating TTS system. **The corresponding speech signals are to be synthesized from the TTS system and submitted.**
 - With these submitted speech signals, organizers are going to evaluate the performance of participants’ zero-shot TTS system by comparing them with the ground-truth utterances.
 
 ### Track 1 Evaluation
