@@ -82,7 +82,7 @@ To evaluate the performance of the PSE models and examine the effectiveness of i
 4. Perceptual evaluation of speech quality (PESQ)
 
 # Baseline systems
-We also build baseline systems for each task and release it as an open-source. You can found our baseline system [here](https://github.com/JaesungBae/GenDA-Challenge-25-ZSTTS-PSE).
+We also build baseline systems for each task and release it as an open-source. You can find our baseline system [here](https://github.com/JaesungBae/GenDA-Challenge-25-ZSTTS-PSE) (a GitHub repo) and the [paper](https://minjekim.com/wp-content/uploads/icasspw2025_jbae.pdf).
 
 - For track 1, we use three open-source zero-shot TTS models as the baseline models: YourTTS [3], SpeechT5-based zero-shot TTS model [4], and XTTS [5]. 
 - For track 2, we adopt the ConvTasNet [6]-based architecture for our PSE models based on the original PSE model architecture proposed in [7, 8]. 
@@ -195,6 +195,21 @@ Participants are asked to submit a minimum two-page (but not exceeding four page
 - The description of the “zero-shot” part of their algorithm
 - (Optional) Any results on the third-party evaluation data they used to validate the models
 - (Optional) Description of the new PSE architecture they propose, including the model complexity
+
+# Cite Our Work
+If you’d like to refer to the challenge or use it in your research, please cite our paper:
+
+Jaesung Bae, Anastasia Kuznetsova, Dinesh Manocha, John Hershey, Trausti Kristjansson, and Minje Kim, **“Generative Data Augmentation Challenge: Zero-Shot Speech Synthesis for Personalized Speech Enhancement,”** in Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing Workshops (ICASSPW): Generative Data Augmentation for Real-World Signal Processing Applications (GenDA 2025), Hyderabad, India, Apr. 6-11, 2025. [PDF](https://minjekim.com/wp-content/uploads/icasspw2025_jbae.pdf)
+
+BibTeX:
+```
+@inproceedings{GenDA2025_RoomAcoustics,
+  title={Generative Data Augmentation Challenge: Zero-Shot Speech Synthesis for Personalized Speech Enhancement},
+  author={Jaesung Bae and Anastasia Kuznetsova and Dinesh Manocha and John Hershey and Trausti Kristjansson and Minje Kim},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing Workshops(ICASSPW)},
+  year={2025}
+}
+```
 
 
 # References
