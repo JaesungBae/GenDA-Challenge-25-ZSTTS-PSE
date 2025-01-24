@@ -199,6 +199,8 @@ Participants are asked to submit a minimum two-page (but not exceeding four page
 - (Optional) Any results on the third-party evaluation data they used to validate the models
 - (Optional) Description of the new PSE architecture they propose, including the model complexity
 
+The paper submission will be part of a non-archival track for the workshop, meaning it won’t be considered a “publication” as it won’t be archived on IEEE Xplore. However, accepted papers will be posted on our website as part of the workshop’s technical program. We encourage the participants' in-person attendance to the workshop, but it is not required. 
+
 # Cite Our Work
 If you’d like to refer to the challenge or use it in your research, please cite our paper:
 
